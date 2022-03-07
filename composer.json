@@ -1,0 +1,20 @@
+{
+  "name": "braunstetter/helper",
+  "description": "Just a package for php helper classes.",
+  "type": "package",
+  "keywords": ["helper", "php"],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Braunstetter\\Helper\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Braunstetter\\Helper\\Tests\\": "tests"
+    }
+  }
+}
