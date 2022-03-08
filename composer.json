@@ -1,7 +1,7 @@
 {
   "name": "braunstetter/helper",
   "description": "Just a package for php helper classes.",
-  "type": "package",
+  "type": "library",
   "keywords": ["helper", "php"],
   "license": "MIT",
   "require": {
