@@ -1,14 +1,15 @@
 <?php
+
 namespace Braunstetter\Helper;
 
 class Arr
 {
-    public static function attachClassToAttrArray(array $array, string $class): array
+    public static function attachClassToAttr(array $array, string $class): array
     {
         return static::attachToAttrArray($array, ['class' => $class]);
     }
 
-    public static function attachToAttrArray(array $array, array $data): array
+    public static function attachToAttr(array $array, array $data): array
     {
         foreach ($data as $key => $value) {
             $array = array_replace(
@@ -17,5 +18,17 @@ class Arr
         }
 
         return $array;
+    }
+
+    /**
+     * Returns the first value of a given array.
+     * If the array is empty it returns null.
+     *
+     * @param array $array
+     * @return mixed
+     */
+    public static function firstValue(array $array): mixed
+    {
+        return array_values($array)[0] ?? null;
     }
 }
