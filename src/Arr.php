@@ -6,7 +6,7 @@ class Arr
 {
     public static function attachClassToAttr(array $array, string $class): array
     {
-        return static::attachToAttrArray($array, ['class' => $class]);
+        return static::attachToAttr($array, ['class' => $class]);
     }
 
     public static function attachToAttr(array $array, array $data): array
