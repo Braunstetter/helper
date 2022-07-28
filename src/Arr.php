@@ -4,12 +4,19 @@ namespace Braunstetter\Helper;
 
 class Arr
 {
-    public static function attachClassToAttr(array $array, string $class): array
+    /**
+     * This method is just handy when it comes to add a class to an existing class string.
+     */
+    public static function attachClass(array $array, string $class): array
     {
-        return static::attachToAttr($array, ['class' => $class]);
+        return static::attach($array, ['class' => $class]);
     }
 
-    public static function attachToAttr(array $array, array $data): array
+
+    /**
+     * Sometimes just want to add some new attribute to an existing string.
+     */
+    public static function attach(array $array, array $data): array
     {
         foreach ($data as $key => $value) {
             $array = array_replace(
@@ -23,9 +30,6 @@ class Arr
     /**
      * Returns the first value of a given array.
      * If the array is empty it returns null.
-     *
-     * @param array $array
-     * @return mixed
      */
     public static function firstValue(array $array): mixed
     {
