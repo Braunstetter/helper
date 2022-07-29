@@ -1,6 +1,17 @@
 # Helper
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Braunstetter/helper/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/Braunstetter/helper/?branch=main)
+[![Total Downloads](http://poser.pugx.org/braunstetter/helper/downloads)](https://packagist.org/packages/braunstetter/helper)
+[![License](http://poser.pugx.org/braunstetter/helper/license)](https://packagist.org/packages/braunstetter/helper)
+
 A bundle for sharing usefully stuff around several projects.
+
+* [Installation](#installation)
+* [Array](#array)
+  * [attachClass](#attachclass)
+  * [attach](#attach)
+  * [firstValue](#firstvalue)
+
 
 ## Installation
 
